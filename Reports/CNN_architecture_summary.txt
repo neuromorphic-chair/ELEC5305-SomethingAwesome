@@ -1,0 +1,66 @@
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_2 (InputLayer)        [(None, 128, 130, 1)]     0         
+                                                                 
+ conv2d_5 (Conv2D)           (None, 128, 130, 16)      160       
+                                                                 
+ activation_5 (Activation)   (None, 128, 130, 16)      0         
+                                                                 
+ max_pooling2d_5 (MaxPooling  (None, 64, 65, 16)       0         
+ 2D)                                                             
+                                                                 
+ dropout_7 (Dropout)         (None, 64, 65, 16)        0         
+                                                                 
+ conv2d_6 (Conv2D)           (None, 64, 65, 32)        4640      
+                                                                 
+ activation_6 (Activation)   (None, 64, 65, 32)        0         
+                                                                 
+ max_pooling2d_6 (MaxPooling  (None, 32, 32, 32)       0         
+ 2D)                                                             
+                                                                 
+ dropout_8 (Dropout)         (None, 32, 32, 32)        0         
+                                                                 
+ conv2d_7 (Conv2D)           (None, 32, 32, 64)        18496     
+                                                                 
+ activation_7 (Activation)   (None, 32, 32, 64)        0         
+                                                                 
+ max_pooling2d_7 (MaxPooling  (None, 16, 16, 64)       0         
+ 2D)                                                             
+                                                                 
+ dropout_9 (Dropout)         (None, 16, 16, 64)        0         
+                                                                 
+ conv2d_8 (Conv2D)           (None, 16, 16, 128)       73856     
+                                                                 
+ activation_8 (Activation)   (None, 16, 16, 128)       0         
+                                                                 
+ max_pooling2d_8 (MaxPooling  (None, 8, 8, 128)        0         
+ 2D)                                                             
+                                                                 
+ dropout_10 (Dropout)        (None, 8, 8, 128)         0         
+                                                                 
+ conv2d_9 (Conv2D)           (None, 8, 8, 256)         295168    
+                                                                 
+ activation_9 (Activation)   (None, 8, 8, 256)         0         
+                                                                 
+ max_pooling2d_9 (MaxPooling  (None, 4, 4, 256)        0         
+ 2D)                                                             
+                                                                 
+ dropout_11 (Dropout)        (None, 4, 4, 256)         0         
+                                                                 
+ flatten_1 (Flatten)         (None, 4096)              0         
+                                                                 
+ dropout_12 (Dropout)        (None, 4096)              0         
+                                                                 
+ dense_2 (Dense)             (None, 512)               2097664   
+                                                                 
+ dropout_13 (Dropout)        (None, 512)               0         
+                                                                 
+ dense_3 (Dense)             (None, 2)                 1026      
+                                                                 
+=================================================================
+Total params: 2,491,010
+Trainable params: 2,491,010
+Non-trainable params: 0
+_________________________________________________________________
